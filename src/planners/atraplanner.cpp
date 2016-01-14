@@ -1247,10 +1247,10 @@ double ATRAPlanner::compute_suboptimality()
                 continue; // return -1.0 ?
             }
             
-            ATRAState* araState = (ATRAState*)abstractState;
+            ATRAState* atraState = (ATRAState*)abstractState;
             
-            int h = araState->h;
-            int g = araState->g;
+            int h = atraState->h;
+            int g = atraState->g;
             if (g + h < openListMin) {
                 openListMin = g + h;
             }
